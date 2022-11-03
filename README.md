@@ -1,18 +1,18 @@
-**サービス名**
+# サービス名
 
-# 使用したtech stacks
+## 使用したtech stacks
 Solidity
 
-# 使用したBlockchain
+## 使用したBlockchain
 Ethereum
 
-# deployしたContract(ExplorerでOK）
+## deployしたContract(ExplorerでOK）
 
 
-# application codeやその他のfile
+## application codeやその他のfile
 
 
-# テスト手順を含むリポジトリへのリンク
+## テスト手順を含むリポジトリへのリンク
 figmaのUIのURL、フロントが間に合えばそこへのリンクも
 
-# 審査やテストのためにプロジェクトにアクセスする方法など
+## 審査やテストのためにプロジェクトにアクセスする方法など
