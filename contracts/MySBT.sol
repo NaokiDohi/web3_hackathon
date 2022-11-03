@@ -10,6 +10,8 @@ contract MySBT is ERC1155, Pausable, Ownable {
     
     using Counters for Counters.Counter;
     Counters.Counter private _tokenCounter;
+    uint256[] internal tmpIds;
+    uint256[] internal tmpAmounts;
 
     constructor() ERC1155("") {}
 
@@ -21,7 +23,9 @@ contract MySBT is ERC1155, Pausable, Ownable {
         uint256 amount,
         bytes memory data
     ) public onlyOwner {
-        _beforeTokenTransfer(operator, from, to, id, amount, data);
+        tmpIds.push(id);
+        tmpAmounts.push(amount);
+        _beforeTokenTransfer(operator, from, to, tmpIds, tmpAmounts, data);
         _tokenCounter.increment();
         uint256 newItemId = _tokenCounter.current();
         _mint(to, newItemId, amount, data);
@@ -34,7 +38,7 @@ contract MySBT is ERC1155, Pausable, Ownable {
         uint256[] memory ids,
         uint256[] memory amounts,
         bytes memory data
-    ) internal pure override(ERC1155) {
+    ) internal override(ERC1155) {
         require(from == address(0), "Err: token is SOUL BOUND");
         super._beforeTokenTransfer(operator, from, to, ids, amounts, data);
     }
