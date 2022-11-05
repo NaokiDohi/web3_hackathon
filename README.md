@@ -1,4 +1,4 @@
-# サービス名
+# aperta(アペルタ)
 
 ### 使用したtech stacks
 Solidity<br>
