@@ -1,26 +1,6 @@
 # aperta(アペルタ)
 
-### 使用したtech stacks
-Solidity<br>
-
-### 使用したBlockchain
-Ethereum<br>
-
-### deployしたContract(ExplorerでOK）
-<https://goerli.etherscan.io/address/0xdfe476048202d469607561d92bfe8ba4d6f47026#code><br>
-
-### application codeやその他のfile
-UI(figma)のURL:
-<https://www.figma.com/proto/p2mr62DaAsgSYawhlJ8OWb/%E6%9D%B1%E4%BA%ACWeb3%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3_221106?node-id=30%3A7&scaling=contain&page-id=0%3A1&starting-point-node-id=30%3A7> <br>
-
-### テスト手順を含むリポジトリへのリンク
-UI・UXをfigmaで確認<br>
-
-### 審査やテストのためにプロジェクトにアクセスする方法など
-UI・UXをfigmaで確認<br>
-
-
-### 概要
+## 概要
 課題<br>
 人の能力・行動履歴などの属性は、より価値を発揮できる場所があるはずなのに所属コミュニティ・エコシステム（C）外には伝わりづらい→SBT化し追跡可能にすればC外でも価値を発揮できる<br>
 <br>
@@ -39,3 +19,22 @@ UI・UXをfigmaで確認<br>
 展望<br>
 ・トケノミクスの導入によるユーザのインセンティブ増加とエコシステム創造<br>
 ・Xにもメリット(SBT発行時にユーザアンケートを挟むなど)を与えSBTを公認化<br>
+
+## 使用したtech stacks
+Solidity<br>
+
+## 使用したBlockchain
+Ethereum<br>
+
+## deployしたContract(ExplorerでOK）
+<https://goerli.etherscan.io/address/0xdfe476048202d469607561d92bfe8ba4d6f47026#code><br>
+
+## application codeやその他のfile
+UI(figma)のURL:
+<https://www.figma.com/proto/p2mr62DaAsgSYawhlJ8OWb/%E6%9D%B1%E4%BA%ACWeb3%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3_221106?node-id=30%3A7&scaling=contain&page-id=0%3A1&starting-point-node-id=30%3A7> <br>
+
+## テスト手順を含むリポジトリへのリンク
+UI・UXをfigmaで確認<br>
+
+## 審査やテストのためにプロジェクトにアクセスする方法など
+UI・UXをfigmaで確認<br>
