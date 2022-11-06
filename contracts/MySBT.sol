@@ -8,10 +8,9 @@ import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 
 contract MySBT is ERC1155, Pausable, Ownable {
     
-    using Counters for Counters.Counter;
-    Counters.Counter private _tokenCounter;
     uint256[] internal tmpIds;
     uint256[] internal tmpAmounts;
+    event afterMint(address to, uint256 Id, uint256 amout);
 
     constructor() ERC1155("") {}
 
@@ -26,9 +25,8 @@ contract MySBT is ERC1155, Pausable, Ownable {
         tmpIds.push(id);
         tmpAmounts.push(amount);
         _beforeTokenTransfer(operator, from, to, tmpIds, tmpAmounts, data);
-        _tokenCounter.increment();
-        uint256 newItemId = _tokenCounter.current();
-        _mint(to, newItemId, amount, data);
+        _mint(to, id, amount, data);
+        emit afterMint(to, id, amount);
     }
 
     function _beforeTokenTransfer(
